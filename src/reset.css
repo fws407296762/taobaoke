@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-
+*{box-sizing:border-box;}
 html {
     line-height: 1.15; /* 1 */
     -ms-text-size-adjust: 100%; /* 2 */
@@ -445,4 +445,32 @@ template {
 
 [hidden] {
     display: none;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #e61414;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    display: block;
+    clear:both;
+    content:"";
+}
+
+
+/*主布局*/
+.main-box{
+    width:1200px;
+    margin:0 auto;
+}
+.fill-main-box{
+    width:100%;
 }

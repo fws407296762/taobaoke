@@ -91,6 +91,7 @@ const config = {
             uglifyOptions:{
             }
         }),
+        new webpack.HotModuleReplacementPlugin(),
         extractCss,
         extractScss
     ],
@@ -98,7 +99,8 @@ const config = {
         extensions:[".js",".jsx"]
     },
     devServer: {
-        host:"www.shadouyouquan.com"
+        host:"www.shadouyouquan.com",
+        inline:true
     }
 };
 

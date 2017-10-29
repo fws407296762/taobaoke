@@ -1,3 +1,108 @@
-.header {
-    height: 30px;
+.header {}
+.header-top{
+    padding:5px 0;
+    font-size:12px;
+    color: #757575;
+    a{
+        color: #757575;
+        &:hover{
+            color: #e61414;
+        }
+    }
+    .page-retain-box{
+        a{
+            margin-left:3px;
+            margin-right:3px;
+        }
+    }
+}
+.header-main{
+    margin-top:20px;
+    .logo-box{
+        color: #e61414;
+        .logo{
+            display: inline-block;
+            font-family:"KaiTi";
+            margin:0 auto;
+        }
+        &>strong{
+            font-size:13px;
+            margin-left:10px;
+            font-weight: normal;
+        }
+    }
+    .search-box{
+        margin-left:300px;
+        margin-right:300px;
+        .search-input-box{
+            border: 3px solid #e61414;
+            width:400px;
+            margin: 0 auto;
+            .search-input{
+                border: none;
+                width: 290px;
+                height: 30px;
+                line-height: 30px;
+                padding: 0;
+                padding-left:10px;
+                padding-right:10px;
+                font-size:12px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .search-btn{
+                width: 104px;
+                height: 31px;
+                border: none;
+                background: #e61414;
+                color: #fff;
+                line-height: 1;
+                font-size: 14px;
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+    .site-props-list{
+        padding:0;
+        li{
+            display: inline-block;
+            list-style: none;
+            font-size:12px;
+            color: #757575;
+            margin-left:5px;
+            margin-right:5px;
+        }
+    }
+}
+
+.nav-box{
+    height:40px;
+    line-height:40px;
+    background: #e61414;
+    margin-top:15px;
+    .nav-list{
+        padding:0;
+        margin-top:0;
+        margin-bottom:0;
+        li{
+            display: inline-block;
+            list-style: none;
+            margin-right:10px;
+            a{
+                display: inline-block;
+                height:100%;
+                color: #fff;
+                padding-left:20px;
+                padding-right:20px;
+                &:hover,&.nav-active{
+                    background: #c60a0a;
+                }
+            }
+        }
+
+    }
+
 }
